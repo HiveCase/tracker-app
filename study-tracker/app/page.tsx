@@ -6,7 +6,11 @@ import jsPDF from "jspdf";
 
 export default function Home() {
   const { state, toggle, score } = useTasks();
-
+  const today = new Date().toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
   const sendReport = async () => {
     await fetch("/api/send-report", {
       method: "POST",
@@ -37,7 +41,7 @@ export default function Home() {
 
   return (
     <main className="p-10 max-w-xl mx-auto">
-      <h1 className="text-2xl font-bold mb-6">Study Tracker</h1>
+      <h1 className="text-2xl font-bold mb-6">Study Tracker {today}</h1>
 
       {tasks.map(t => (
         <div key={t.id} className="flex gap-3 mb-2">
