@@ -1,0 +1,15 @@
+export const tasks = [
+  { id: "dl_project", label: "DL project" },
+  { id: "dl_concept", label: "DL concept" },
+  { id: "dl_artifact", label: "DL artifact" },
+  { id: "ai_lecture", label: "AI lecture" },
+  { id: "ai_reading", label: "AI reading" },
+  { id: "ai_notes", label: "AI notes" },
+  { id: "st_topic", label: "ST topic" },
+  { id: "st_practice", label: "ST practice" },
+  { id: "se_reading", label: "SE reading" },
+  { id: "se_reflection", label: "SE reflection" },
+  { id: "learn3", label: "3 learnings" },
+  { id: "doubt", label: "Doubt captured" },
+  { id: "tomorrow", label: "Tomorrow target" },
+];
